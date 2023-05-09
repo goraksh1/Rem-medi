@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Medical History</title>
+        <link rel="stylesheet" href="historystyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+            <a href="landingindex.htm" class="logo"><span>R</span>EM-<span>M</span>EDI</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="landingindex.htm">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="historyindex.htm">Medical History</a></li>
+                    <li><a href="clockindex.htm">Reminder</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                </ul>
+            </nav>
+            
+            </div>
+            </header>
+        <div id="main"></div>
+        <form class="form" id="form">
+            <div class="form-content">
+                <div class="form-head">
+                    <h3 id="form-title">Add Prescription</h3>
+                    <button type="button" id="close-btn">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                </div>
+                <div class="form-main">
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="">
+                                Your Prescription :-
+                            </label>
+                            <input type="text" placeholder="Name of the medicines" class="form-control" name="addressing_name" id="addressing_name">
+                        </div>
+                    </div>
+
+                    <div class="form-row grid-row">
+                        <div class="form-col">
+                            <label for="">
+                                First Name
+                            </label>
+                            <input type="text" placeholder="The first name" class="form-control" name="first_name"
+                            id="first_name">
+                        </div>
+                        <div class="form-col">
+                            <label for="">
+                                Last Name
+                            </label>
+                            <input type="text" placeholder="The last name" class="form-control" name="last_name" id="last_name">
+                        </div>
+                    </div>
+                    <div class="form-row grid-row">
+                        <div class="form-col">
+                            <label for="">
+                                Email
+                            </label>
+                            <input type="text" placeholder="The email" class="form-control" name="email" id="email">
+                        </div>
+                        <div class="form-col">
+                            <label for="">
+                                Phone
+                            </label>
+                            <input type="text" placeholder="The phone" class="form-control" name="phone" id="phone">
+                        </div>
+                    </div>
+                    <div class="form-row grid-row">
+                        <div class="form-col">
+                            <label for="">
+                                Address
+                            </label>
+                            <input type="text" placeholder="Street address,apartment,house number,etc." class="form-control" name="address" id="address">
+                        </div>
+                        <div class="form-col">
+                            <label for="">
+                                Postal Code
+                            </label>
+                            <input type="text" placeholder="174103" class="form-control" name="postal_code" id="postal_code">
+                        </div>
+                    </div>
+                    <div class="form-row grid-row">
+                        <div class="form-col">
+                            <label for="">
+                                City
+                            </label>
+                            <input type="text" placeholder="City name" class="form-control" name="city" id="city">
+                        </div>
+                        <div class="form-col">
+                            <label for="">
+                                Country
+                            </label>
+                            <select id="country_list" name="country">
+                                <!-- <option>USA</option>
+                                <option>India</option>
+                                <option>Russia</option>
+                                <option>France</option> -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="">Labels</label>
+                            <select name="labels" id="labels">
+                                <option value="Family">Family</option>
+                                <option value="Friends">Friends</option>
+                                <option value="Colleagues">Colleagues</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row" id="form-btns">
+                        <button type="submit" id="save-btn">Save</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <!--address book home-->
+        <div class="pre-book" id="pre-book">
+            <div class="pre-book-content">
+                <div class="pre-book-head">
+                    <i class="fa-solid fa-file-medical"></i>
+                    <h2>Prescription<span>Book</span></h2>
+                </div>
+                <div class="pre-book-top">
+                    <button type="button" class="btn" id="add-btn">
+                        <span><i class="fas fa-plus"></i> Add prescription
+                        </span>
+                    </button>
+                </div>
+                <div class="pre-book-list" id="pre-book-list">
+                    <table class="pre-table" id="pre-table">
+                          <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Address</th>
+                                <th>Labels</th>
+                                <th>By name</th>
+                                <th>Phone</th>
+                            </tr>
+                          </thead>
+                          <tbody id="pre-table-body">
+                                
+                          </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--end of address book home-->
+
+
+        <script src="historyscript.js"></script>
+    </body>
+</html>

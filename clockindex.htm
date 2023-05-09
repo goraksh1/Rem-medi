@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm App</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="clockstyle.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+      <a href="landingindex.htm" class="logo"><span>R</span>EM-<span>M</span>EDI</a>
+      <nav class="nav">
+          <ul>
+              <li><a href="landingindex.htm">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="historyindex.htm">Medical History</a></li>
+              <li><a href="clockindex.htm">Reminder</a></li>
+              <li><a href="landingindex.htm">Reviews</a></li>
+          </ul>
+      </nav>
+      
+      </div>
+      </header>
+    <div class="wrapper">
+
+      <div class="alarmhead">
+        <h3><i class="fa-solid fa-clock-rotate-left"></i> Set Alarm</h3>
+      </div>
+
+      <div class="timer-display">00:00:00</div>
+      <div class="container">
+        <div class="inputs">
+          <input
+            type="number"
+            id="hourInput"
+            placeholder="00"
+            min="0"
+            max="23"
+          />
+          <input
+            type="number"
+            id="minuteInput"
+            placeholder="00"
+            min="0"
+            max="59"
+          />
+        </div>
+        <button id="set">Add Alarm</button>
+        <div class="activeAlarms"></div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="clockscript.js"></script>
+  </body>
+</html>
